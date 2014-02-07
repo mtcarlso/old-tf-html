@@ -1,0 +1,96 @@
+html {
+	height: 100%;
+}
+
+html, body {
+	color: #444;
+}
+
+.logo {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+
+/*little ditty to remember how to do content inserts*/
+h3::before, h3::after {
+	content: "----";
+}
+
+.customizer {
+	margin-top: 0px;
+	border: 2px solid black;
+	height: 100%;
+	display: block;
+	background: purple url("../img/brand.png") no-repeat fixed center;
+	background-size: cover;
+	width: 100%;
+}
+
+section {
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.nav {
+	float: right;
+	margin: 40px 0 0 0;
+	list-style: none;
+}
+
+ul.nav li {
+	float: left;
+	margin-right: 200px;
+}
+
+ul.nav li:last-child {
+	margin-right: 100px;
+}
+
+li a {
+	text-decoration: none;
+}
+
+.scene_nav {
+	position: fixed;
+	top: 30%;
+	left: 20px;
+}
+
+.scene_nav li a {
+	background: rgba(0,0,0,.7);
+	text-align: center;
+	color: white;
+	display: block;
+	width: 80px;
+	padding: 20px 0 12px;
+	margin-bottom: 5px;
+	font-size: .75em;
+}
+
+.scene_nav li a img {
+  display: block;
+	margin: auto;
+	margin-bottom: 12px;
+}
+
+.scene_nav li a:visited {
+  color: white;
+}
+
+.scene_nav li a:selected {
+  background: white;
+}
+
+.scene_nav li a:hover {
+  color: white;
+  background: purple;
+}
