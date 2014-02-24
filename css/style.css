@@ -3,7 +3,7 @@ html {
 }
 
 html, body {
-	color: #444;
+	color: #343434;
 }
 
 .logo {
@@ -12,27 +12,58 @@ html, body {
 	left: 20px;
 }
 
-/*little ditty to remember how to do content inserts*/
-h3::before, h3::after {
-	content: "----";
+/*little ditty to remember how to do content inserts
+h2::before, h2::after {
+	content: "-------------";
+}*/
+
+h2 {
+	font-family: Georgia, serif;
+}
+
+h3, h4 {
+	font-family: europa, sans-serif;
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 1.25em;
+	font-family: serif;
 }
 
 .customizer {
 	margin-top: 0px;
-	border: 2px solid black;
 	height: 100%;
 	display: block;
-	background: purple url("../img/brand.png") no-repeat fixed center;
+	background: purple url("../img/tie-test-bg.png") no-repeat fixed center;
 	background-size: cover;
 	width: 100%;
 }
 
+.customizer:nth-of-type(1) {
+	background: gray;
+}
+
+.customizer:nth-of-type(3) {
+	background: gray;
+}
+
+.left, .right {
+	float: left;
+	margin-left: 20%;
+}
+
 section {
 	width: 80%;
-	margin: auto;
-	padding-top: 100px;
+	margin: 0 auto;
+	padding-top: 150px;
 	text-align: center;
+	height: 768px;
 }
+
+/*NAV*/
 
 ul {
   list-style: none;
@@ -58,6 +89,8 @@ ul.nav li:last-child {
 li a {
 	text-decoration: none;
 }
+
+/*SIDE NAV*/
 
 .scene_nav {
 	position: fixed;
@@ -93,4 +126,115 @@ li a {
 .scene_nav li a:hover {
   color: white;
   background: purple;
+}
+
+/*GENERAL*/
+
+button {
+	border: 2px solid #343434;
+	background-color: rgba(0,0,0,0);
+	padding: 16px 40px;
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: purple;
+	border: 2px solid purple;
+}
+
+/*Color Boxes*/
+.color-row {
+	height: 1.75em;
+	width: 100%;
+	margin: 0 auto 10px;
+}
+.color-box {
+	background-color: purple;
+	width: 1.75em;
+	height: 1.75em;
+	margin: 0px 10px 0px 0px;
+	float: left;
+}
+.color-chosen {
+	float: left;
+	width: 2em;
+	height: 2em;
+	margin-top: 5px;
+}
+
+/*Color Section Customizations*/
+
+#color section {
+  	margin: 0 600px;
+	width: 400px;
+	text-align: left;
+}
+
+#color h4 {
+	font-size: 2.25em;
+	margin: 0 5px 10px 0;
+	padding-top: 0px;
+	float: left;
+}
+/*Tipping Customizations*/
+#tipping section {
+  	margin: 0 200px;
+	padding-top: 300px;
+	width: 400px;
+	text-align: right;
+}
+
+#tipping .color-chosen {
+	height: 3em;
+	width: 3em;
+	margin: 0;
+}
+
+#tipping .color-box {
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+#tipping p {
+	margin: 0 0 15px 0;
+}
+
+#tipping h2 {
+	margin: 0 0;
+}
+
+input {
+	text-align: center;
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+	margin: 1em;
+	padding-top: 10px;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	border-bottom: 1px dotted black;
+	vertical-align: bottom;
+}
+
+/*For 'next page' element; currently not being used on account of i broke it...*/
+.next a {
+	text-decoration: none;
+	font-style: italic;
+	position: absolute;
+	margin: 0px auto;
+	height: 80px;
+	width: 200px;
+	bottom: 40px;
+	text-align: center;
+	background: purple url("../img/glyphicons_223_chevron-down.png");
+}
+
+/*For clearing floats; treehouse hack*/
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
 }
