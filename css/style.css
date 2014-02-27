@@ -11,6 +11,7 @@ html, body {
 	position: fixed;
 	top: 20px;
 	left: 20px;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
 }
 
 /*little ditty to remember how to do content inserts
@@ -44,7 +45,7 @@ p {
 }
 
 .customizer:nth-of-type(2) {
-	background: purple url("../img/tie-test-bg.png") no-repeat fixed center;
+	background: purple url("../img/ThursdayFinestMock.jpg") no-repeat fixed center;
 }
 
 .customizer:nth-of-type(3) {
@@ -95,6 +96,10 @@ li a {
 	text-decoration: none;
 }
 
+li a:visited {
+	color: rgba(256, 256, 256, 0.7)
+}
+
 /*SIDE NAV*/
 
 .scene_nav {
@@ -103,22 +108,24 @@ li a {
 	left: 20px;
 }
 
-.scene_nav li a {
-	background: rgba(0,0,0,.7);
-	text-align: center;
-	color: white;
-	display: block;
-	width: 80px;
-	padding: 20px 0 12px;
-	margin-bottom: 5px;
-	font-size: .75em;
+ul.scene_nav {
+	list-style-type: disc;
+	padding-left: 20px;
 }
 
-.scene_nav li a img {
+.scene_nav li a {
+	text-align: left;
+	color: rgba(255, 255, 255, 0.7);
+	display: block;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+/*.scene_nav li a img {
   display: block;
 	margin: auto;
 	margin-bottom: 12px;
-}
+}*/
 
 .scene_nav li a:visited {
   color: white;
@@ -126,11 +133,11 @@ li a {
 
 .scene_nav li a:selected {
   background: white;
+  font-weight: bold;
 }
 
 .scene_nav li a:hover {
   color: white;
-  background: purple;
 }
 
 /*GENERAL*/
@@ -144,9 +151,10 @@ button {
 }
 
 button:hover {
-	background-color: purple;
-	border: 2px solid purple;
-	text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
+	background-color: white;
+	border: 2px solid white;
+	text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+	color: blue;
 }
 
 /*Color Boxes*/
@@ -210,7 +218,7 @@ button:hover {
 	margin: 0 0;
 }
 
-input {
+input[type="text"]{
 	text-align: center;
 	font-family: Georgia, serif;
 	font-size: 5em;
@@ -220,6 +228,16 @@ input {
 	border: none;
 	border-bottom: 1px dotted black;
 	vertical-align: bottom;
+}
+
+input[type="checkbox"]{
+	position: relative;
+}
+
+label {
+	display: block;
+	padding-left: 40px;
+	text-indent: 1em;
 }
 
 /*For 'next page' element; currently not being used on account of i broke it...*/
