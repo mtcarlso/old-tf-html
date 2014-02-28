@@ -20,7 +20,7 @@ h2::before, h2::after {
 }*/
 
 h2 {
-	font-family: Georgia, serif;
+	font-family: adobe-garamond-pro, Georgia, serif;
 }
 
 h3, h4 {
@@ -180,8 +180,9 @@ button:hover {
 /*Color Section Customizations*/
 
 #color section {
-  	margin: 0 750px;
+	margin: 0 750px;
 	width: 400px;
+	padding-top: 200px;
 	text-align: left;
 }
 
@@ -193,7 +194,7 @@ button:hover {
 }
 /*Tipping Customizations*/
 #tipping section {
-  	margin: 0 200px;
+  margin: 0 200px;
 	padding-top: 300px;
 	width: 400px;
 	text-align: right;
