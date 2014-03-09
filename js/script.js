@@ -39,5 +39,5 @@ var tie = {
   });
 
   $("#monogram-text").blur( function() {
-    alert("working");
+    tie.initials = $(this).val();
   });
