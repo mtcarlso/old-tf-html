@@ -39,13 +39,14 @@ p {
 	margin-top: 0px;
 	height: 100%;
 	display: block;
-	background: purple url("../img/width.jpg") no-repeat fixed center;
+	background: white url("../img/width.jpg") no-repeat fixed center;
 	background-size: cover;
 	width: 100%;
 }
 
-.customizer:nth-of-type(2) {
-	background: purple url("../img/ThursdayFinestMock.jpg") no-repeat fixed center;
+#color {
+	background-image: url("../img/Color_1_plum.png"), url("../img/ThursdayFinestMock.jpg");
+	background-position: no-repeat fixed center;
 }
 
 .customizer:nth-of-type(3) {

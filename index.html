@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Thursday Finest</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".scene-nav">
   <img class="logo" src="img/brand.png" alt="Thursday Finest">
   <ul class="nav">
     <li><a href="#">About</a></li>
@@ -86,6 +86,24 @@
 				    </div>
 				    <div id="collapseTwo" class="panel-collapse collapse">
 				      <div class="panel-body">
+				      	<div class="color-row">
+									<a href="#" class="color-box navy" data-color="navy"></a>
+									<a href="#" class="color-box white" data-color="white"></a>
+									<a href="#" class="color-box smoke" data-color="smoke"></a>
+									<a href="#" class="color-box black" data-color="black"></a>
+									<a href="#" class="color-box plum" data-color="plum"></a>
+									<a href="#" class="color-box yellow" data-color="yellow"></a>
+									<a href="#" class="color-box oxblood" data-color="oxblood"></a>
+								</div>
+								<div class="color-row">
+									<a href="#" class="color-box spruce" data-color="spruce"></a>
+									<a href="#" class="color-box graine" data-color="grain"></a>
+									<a href="#" class="color-box tudor" data-color="tudor"></a>
+									<a href="#" class="color-box wine" data-color="wine"></a>
+									<a href="#" class="color-box bred" data-color="bred"></a>
+									<a href="#" class="color-box poppy" data-color="poppy"></a>
+									<a href="#" class="color-box royal" data-color="royal"></a>
+								</div>
 				      </div>
 				    </div>
 				  </div>
@@ -100,6 +118,24 @@
 				    </div>
 				    <div id="collapseThree" class="panel-collapse collapse">
 				      <div class="panel-body">
+				      	<div class="color-row">
+									<a href="#" class="color-box navy" data-color="navy"></a>
+									<a href="#" class="color-box white" data-color="white"></a>
+									<a href="#" class="color-box smoke" data-color="smoke"></a>
+									<a href="#" class="color-box black" data-color="black"></a>
+									<a href="#" class="color-box plum" data-color="plum"></a>
+									<a href="#" class="color-box yellow" data-color="yellow"></a>
+									<a href="#" class="color-box oxblood" data-color="oxblood"></a>
+								</div>
+								<div class="color-row">
+									<a href="#" class="color-box spruce" data-color="spruce"></a>
+									<a href="#" class="color-box graine" data-color="grain"></a>
+									<a href="#" class="color-box tudor" data-color="tudor"></a>
+									<a href="#" class="color-box wine" data-color="wine"></a>
+									<a href="#" class="color-box bred" data-color="bred"></a>
+									<a href="#" class="color-box poppy" data-color="poppy"></a>
+									<a href="#" class="color-box royal" data-color="royal"></a>
+								</div>
 				      </div>
 				    </div>
 				  </div>
@@ -161,8 +197,11 @@
 	$(".color-box").click( function() {
 		var element = $(this).data("color");
 		var target = $("#base-color");
+		var staticBg = $("#color").css('background-image').split(',').pop();
 		target.removeClass(target.attr('class').split(' ').pop());
 		target.addClass(element).data("color", element);
+		$("#color").css('background-image', 
+			"url(img/Color_1_" + element + ".png), " + staticBg);	
 		return false;
 	});
 	</script>
