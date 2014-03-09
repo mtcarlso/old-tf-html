@@ -8,7 +8,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Thursday Finest</title>
 </head>
-<body data-spy="scroll" data-target=".scene-nav">
+<body>
   <img class="logo" src="img/brand.png" alt="Thursday Finest">
   <ul class="nav">
     <li><a href="#">About</a></li>
@@ -16,7 +16,7 @@
     <li><a href="#">Contact Us</a></li>
     <li><a href="#">Cart</a></li>
   </ul>
-  <ul class="main">
+  <ul class="main" data-spy="scroll" data-target="#scene_nav">
 		<li class="customizer" id="width">
 		  <section>
 		  	<h2>Select Width</h2>
@@ -33,9 +33,6 @@
 		  		<button data-width="modern">Choose</button>
 		  	</div>
 		  </section>
-<!-- 		  	<div class="next">
-		  		<a href="#color">Select Color</a>
-		  	</div> -->
 		</li>
 
 		<li class="customizer" id="color">
@@ -176,11 +173,11 @@
 		  </section>
     </li>
   </ul>
-  <ul class="scene_nav">
-    <li><a href="#width">Width</a></li>
-    <li><a href="#color">Color</a></li>
-    <li><a href="#tipping">Tipping</a></li>
-    <li><a href="#monogram">Monogram</a></li>
+  <ul id="scene_nav">
+    <li><a class="scene_link" href="#width">Width</a></li>
+    <li><a class="scene_link" href="#color">Color</a></li>
+    <li><a class="scene_link" href="#tipping">Tipping</a></li>
+    <li><a class="scene_link" href="#monogram">Monogram</a></li>
   </ul>
 	<script	type="text/javascript" src="js/jquery.js"></script>
 	<script	type="text/javascript" src="js/bootstrap.min.js"></script>
