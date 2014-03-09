@@ -39,7 +39,7 @@ p {
 	margin-top: 0px;
 	height: 100%;
 	display: block;
-	background: white url("../img/width.jpg") no-repeat fixed center;
+	background: url("../img/width.jpg") no-repeat fixed center;
 	background-size: cover;
 	width: 100%;
 }
@@ -50,11 +50,11 @@ p {
 }
 
 .customizer:nth-of-type(3) {
-	background: purple url("../img/tipping.jpg") no-repeat fixed center;
+	background: url("../img/tipping.jpg") no-repeat fixed center;
 }
 
 .customizer:nth-of-type(4) {
-	background: purple url("../img/initials.jpg") no-repeat fixed center;
+	background: url("../img/initials.jpg") no-repeat fixed center;
 }
 
 .left, .right {
