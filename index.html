@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -44,26 +44,26 @@
 		  	<p>Mix and match.</p>
 			  <div class="clearfix">
 				  <h4>Base Stripe</h4>
-				  <a class="color-chosen color-box"></a>
+				  <a class="color-chosen color-box navy" id="base-color"></a>
 			  </div>
 			  <div class="color-group">
 					<div class="color-row">
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
+						<a href="#" class="color-box navy" data-color="navy"></a>
+						<a href="#" class="color-box white" data-color="white"></a>
+						<a href="#" class="color-box smoke" data-color="smoke"></a>
+						<a href="#" class="color-box black" data-color="black"></a>
+						<a href="#" class="color-box plum" data-color="plum"></a>
+						<a href="#" class="color-box yellow" data-color="yellow"></a>
+						<a href="#" class="color-box oxblood" data-color="oxblood"></a>
 					</div>
 					<div class="color-row">
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
-						<a href="#" class="color-box"></a>
+						<a href="#" class="color-box spruce" data-color="spruce"></a>
+						<a href="#" class="color-box graine" data-color="grain"></a>
+						<a href="#" class="color-box tudor" data-color="tudor"></a>
+						<a href="#" class="color-box wine" data-color="wine"></a>
+						<a href="#" class="color-box bred" data-color="bred"></a>
+						<a href="#" class="color-box poppy" data-color="poppy"></a>
+						<a href="#" class="color-box royal" data-color="royal"></a>
 					</div>
 				</div>
 			  <div class="clearfix">
@@ -74,6 +74,50 @@
 				  <h4>Satin Trim</h4>
 				  <div class="color-chosen color-box"></div>
 			  </div>
+				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          Collapsible Group Item #1
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
 		  </section>
 	  </li>
 
@@ -116,6 +160,25 @@
     <li><a href="#tipping">Tipping</a></li>
     <li><a href="#monogram">Monogram</a></li>
   </ul>
-	
+	<script	type="text/javascript" src="js/jquery.js"></script>
+	<script	type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script>
+	var tie = {
+		width: "skinny",
+		color1: "blue",
+		color2: "green",
+		color3: "red",
+		tipping: "gray",
+		initials: "TF"
+	}
+
+	$(".color-box").click( function() {
+		var element = $(this).data("color");
+		var target = $("#base-color");
+		target.removeClass(target.attr('class').split(' ').pop());
+		target.addClass(element).data("color", element);
+		return false;
+	});
+	</script>
 </body>
 </html>

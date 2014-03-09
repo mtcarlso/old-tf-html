@@ -171,10 +171,11 @@ button:hover {
 	float: left;
 }
 .color-chosen {
+	background-color: blue;
 	float: left;
 	width: 2em;
 	height: 2em;
-	margin-top: 5px;
+	margin-top: 5px 10px 0px 0px;
 }
 
 /*Color Section Customizations*/
@@ -263,4 +264,64 @@ label {
 
 .clearfix:after {
 	clear: both;
+}
+
+.navy {
+  background-color: rgb(000,011,075);
+}
+
+.white {
+  background-color: rgb(240,240,240);
+}
+
+.smoke {
+  background-color: rgb(110,108,125);
+}
+
+.black {
+  background-color: rgb(000,000,000);
+}
+
+.plum {
+  background-color: rgb(045,000,050);
+}
+
+.yellow {
+  background-color: rgb(249,255,075);
+}
+
+.oxblood {
+  background-color: rgb(093,000,031);
+}
+
+.spruce {
+  background-color: rgb(018,050,032);
+}
+
+.graine {
+  background-color: rgb(040,040,040);
+}
+
+.tudor {
+  background-color: rgb(136,000,035);
+}
+
+.wine {
+  background-color: rgb(093,000,024);
+}
+
+.bred {
+  background-color: rgb(225,021,000);
+}
+
+.poppy {
+  background-color: rgb(212,000,015);
+}
+
+.royal {
+  background-color: rgb(000,016,113);
+}
+
+.pink {
+  background-color: rgb(255,187,192);
 }
