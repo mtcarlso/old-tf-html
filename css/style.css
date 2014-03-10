@@ -58,15 +58,23 @@ p {
 }
 
 .left, .right {
-	margin-top: 50px;
+	margin-top: 0px;
 	float: left;
 	width: 50%;
 }
 
+.left {
+	padding-left: 10%;
+}
+
+.right {
+	padding-right: 10%;
+}
+
 section {
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 150px;
 	text-align: center;
 }
 
@@ -105,7 +113,7 @@ li a:visited {
 
 #scene_nav {
 	position: fixed;
-	top: 30%;
+	top: 260px;
 	left: 20px;
 }
 
