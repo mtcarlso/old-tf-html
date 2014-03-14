@@ -5,6 +5,7 @@ html {
 html, body {
 	color: white;
 	text-shadow: rgba(0, 0, 0, 0.498039) 0px 1px 2px;
+	background-color: none;
 }
 
 .logo {
@@ -178,6 +179,9 @@ button:hover {
 	height: 1.75em;
 	margin: 0px 10px 0px 0px;
 	float: left;
+	border-radius: 50%;
+	padding: 3px;
+	border: 3px solid rgba(255,255,255,.5);
 }
 .color-chosen {
 	background-color: blue;
@@ -201,6 +205,14 @@ button:hover {
 	margin: 0 5px 10px 0;
 	padding-top: 0px;
 	float: left;
+}
+
+.panel {
+	background-color: rgba(0,0,0,0);
+}
+
+.panel-default>.panel-heading {
+	background-color: rgba(0,0,0,0);
 }
 /*Tipping Customizations*/
 #tipping section {
