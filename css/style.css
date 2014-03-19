@@ -155,7 +155,7 @@ button {
 	font-weight: bold;
 }
 
-button:hover {
+button:hover, .active {
 	background-color: white;
 	border: 2px solid white;
 	text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;

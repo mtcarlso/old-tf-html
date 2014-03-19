@@ -28,7 +28,9 @@ $(function(){
 //save tie width on user click
 $("[data-width]").click( function() {
   tie.width = $(this).data("width");
-})
+  $(".button-width").removeClass('active');    
+  $(this).addClass('active');
+});
 
 //update background image, big color box to change on click of color selection for the first color
 $(".color-box").click( function() {
