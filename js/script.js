@@ -41,7 +41,8 @@ $(".color-box").click( function() {
   //assign the value to the key for the tie
   tie[chosenTarget] = chosenColor;
 
-  $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_bred_black.png)');
+  $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_' 
+              + tie.color2 + '_' + tie.color3 + '.png)');
 
 
 
