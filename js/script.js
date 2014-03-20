@@ -1,9 +1,9 @@
 //our tie, in use
 var tie = {
 		width: "skinny",
-		color1: "navy",
-		color2: "green",
-		color3: "red",
+		color1: "black",
+		color2: "black",
+		color3: "bred",
 		tipping: "gray",
 		initials: "TF"
 	};
@@ -34,12 +34,16 @@ $("[data-width]").click( function() {
 
 //update background image, big color box to change on click of color selection for the first color
 $(".color-box").click( function() {
+  //set variables for the appropriate key and value for the tie
 	var chosenTarget = $(this).data("color-target");
   var chosenColor = $(this).data("color");
 
+  //assign the value to the key for the tie
   tie[chosenTarget] = chosenColor;
 
-  alert(tie[chosenTarget]);
+  $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_bred_black.png)');
+
+
 
   //this variable in this context might be best if it came from a centralized object for the tie
 
