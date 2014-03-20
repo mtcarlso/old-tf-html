@@ -34,8 +34,16 @@ $("[data-width]").click( function() {
 
 //update background image, big color box to change on click of color selection for the first color
 $(".color-box").click( function() {
-	//this variable in this context might be best if it came from a centralized object for the tie
+	var chosenTarget = $(this).data("color-target");
   var chosenColor = $(this).data("color");
+
+  tie[chosenTarget] = chosenColor;
+
+  alert(tie[chosenTarget]);
+
+  //this variable in this context might be best if it came from a centralized object for the tie
+
+/*  var chosenColor = $(this).data("color");
 	
   var targetId = $("#base-color");
 	var multi = $("#color").css('background-image').split(',');
@@ -55,7 +63,8 @@ $(".color-box").click( function() {
     var bgImages = bgImages + "," + multi[i];
   };
   $("#color").css('background-image', bgImages);
-	return false;
+	*/
+  return false;
 });
 
 //save the initials for monogram
