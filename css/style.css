@@ -46,7 +46,7 @@ p {
 }
 
 #color {
-	background-image: url("../img/ThursdayFinestMock.jpg");
+	background-image: url("../img/bg/black_bred_plum.png");
 	background-position: no-repeat fixed center;
 }
 
@@ -75,7 +75,7 @@ p {
 section {
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 150px;
+	padding-top: 120px;
 	text-align: center;
 }
 
@@ -159,7 +159,8 @@ button:hover, .active {
 	background-color: white;
 	border: 2px solid white;
 	text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
-	color: blue;
+	color: black;
+	outline-style: none;
 }
 
 /*Width Customizations*/
@@ -175,20 +176,23 @@ button:hover, .active {
 }
 .color-box {
 	background-color: purple;
-	width: 1.75em;
-	height: 1.75em;
+	width: 2.25em;
+	height: 2.25em;
 	margin: 0px 10px 0px 0px;
 	float: left;
 	border-radius: 50%;
 	padding: 3px;
-	border: 3px solid rgba(255,255,255,.5);
+	border: 1px solid rgba(255,255,255,.1);
 }
 .color-chosen {
 	background-color: blue;
 	float: left;
-	width: 2em;
-	height: 2em;
-	margin-top: 5px 10px 0px 0px;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	border: 2px solid rgba(255,255,255,.1);
+	margin: 0px 10px 0px 0px;
+	vertical-align: middle;
 }
 
 /*Color Section Customizations*/
@@ -196,7 +200,7 @@ button:hover, .active {
 #color section {
 	margin: 0 750px;
 	width: 400px;
-	padding-top: 200px;
+	padding-top: 150px;
 	text-align: left;
 }
 
@@ -207,13 +211,6 @@ button:hover, .active {
 	float: left;
 }
 
-.panel {
-	background-color: rgba(0,0,0,0);
-}
-
-.panel-default>.panel-heading {
-	background-color: rgba(0,0,0,0);
-}
 /*Tipping Customizations*/
 #tipping section {
   margin: 0 200px;
@@ -345,4 +342,25 @@ label {
 
 .pink {
   background-color: rgb(255,187,192);
+}
+
+/*BOOTSTRAP OVERRIDES*/
+/*PANEL*/
+.panel, .panel-body {
+	border: none;
+	background-color: rgba(0,0,0,0);
+}
+.panel-group {
+	width: 450px;
+}
+
+.panel-title a {
+	color: white;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+.panel-default>.panel-heading {
+	background-color: rgba(0,0,0,0);
+	padding-left: 0;
 }

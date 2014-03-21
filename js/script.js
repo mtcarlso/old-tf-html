@@ -6,12 +6,12 @@ var tie = {
 		color3: "bred",
 		tipping: "gray",
 		initials: "TF"
-	};
+};
 
 //animate to sections of the site
 $('.scene_link').click(function(){
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
     return false;
 });
@@ -19,9 +19,9 @@ $('.scene_link').click(function(){
 
 //resize sections to be full height of browser; needs testing on giant monitors, maybe some max and min conditions
 $(function(){
-    $('.customizer').css({'height':($(window).height())+'px'});
+    $('.customizer').css({'height':($(window).height()) + 'px'});
     $(window).resize(function(){
-        $('.customizer').css({'height':($(window).height())+'px'});
+        $('.customizer').css({'height':($(window).height()) + 'px'});
     });
 });
 
@@ -41,10 +41,25 @@ $(".color-box").click( function() {
   //assign the value to the key for the tie
   tie[chosenTarget] = chosenColor;
 
+  //make the big thumbnail color change - makes first one change....
+  if (chosenTarget = "color1") {
+      var lastClass = $('#primary-thumb').attr('class').split(' ').pop();
+      $("#primary-thumb").removeClass(lastClass);
+      $("#primary-thumb").addClass(chosenColor);  
+  } else if (chosenTarget = "color2") {
+    var lastClass = $('#secondary-thumb').attr('class').split(' ').pop();
+    $("#secondary-thumb").removeClass(lastClass);
+    $("#secondary-thumb").addClass(chosenColor);  
+  } else if (chosenTarget = "color3") {
+    var lastClass = $('#tertiary-thumb').attr('class').split(' ').pop();
+    $("#tertiary-thumb").removeClass(lastClass);
+    $("#tertiary-thumb").addClass(chosenColor);  
+  }
+
+  //make the background image update with the new values
   $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_' 
               + tie.color2 + '_' + tie.color3 + '.png)');
-
-
+  
 
   //this variable in this context might be best if it came from a centralized object for the tie
 
