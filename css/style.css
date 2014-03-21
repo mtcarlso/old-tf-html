@@ -177,8 +177,8 @@ button:hover, .active {
 }
 .color-box {
 	background-color: purple;
-	width: 2.35em;
-	height: 2.35em;
+	width: 2.25em;
+	height: 2.25em;
 	margin: 0px 6px 0px 0px;
 	float: left;
 	border-radius: 50%;
