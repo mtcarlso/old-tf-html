@@ -42,11 +42,10 @@ p {
 	display: block;
 	background: url("../img/width.jpg") no-repeat fixed center;
 	background-size: cover;
-	width: 100%;
 }
 
 #color {
-	background-image: url("../img/bg/black_bred_plum.png");
+	background-color: rgba(40,40,40,.2);
 	background-position: no-repeat fixed center;
 }
 

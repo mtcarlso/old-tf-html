@@ -57,6 +57,7 @@ $(".color-box").click( function() {
   }
 
   //make the background image update with the new values
+  $("#color").css('background-image', 'none');
   $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_' 
               + tie.color2 + '_' + tie.color3 + '.png)');
   
