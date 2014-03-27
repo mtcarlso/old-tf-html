@@ -45,7 +45,7 @@ p {
 }
 
 #color {
-  background-position: no-repeat fixed center;
+  overflow: hidden;
 }
 
 .customizer:nth-of-type(3) {
@@ -204,6 +204,8 @@ button:hover, .active {
 	width: 400px;
 	padding-top: 150px;
 	text-align: left;
+	z-index: 100;
+	position: relative;
 }
 
 #color h4 {
@@ -211,6 +213,28 @@ button:hover, .active {
 	margin: 0 5px 10px 0;
 	padding-top: 0px;
 	float: left;
+}
+
+.image-holder {
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+.back-stack {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.stack {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.color-group {
+	position: absolute;
 }
 
 /*Tipping Customizations*/

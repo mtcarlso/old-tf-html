@@ -42,24 +42,27 @@ $(".color-box").click( function() {
   tie[chosenTarget] = chosenColor;
 
   //make the big thumbnail color change - makes first one change....
-  if (chosenTarget = "color1") {
+  if (chosenTarget == "color1") {
       var lastClass = $('#primary-thumb').attr('class').split(' ').pop();
       $("#primary-thumb").removeClass(lastClass);
-      $("#primary-thumb").addClass(chosenColor);  
-  } else if (chosenTarget = "color2") {
+      $("#primary-thumb").addClass(chosenColor);
+      $("#primary-color").attr("src", "img/tie/primary__" + chosenColor + ".png");
+  } else if (chosenTarget == "color2") {
     var lastClass = $('#secondary-thumb').attr('class').split(' ').pop();
     $("#secondary-thumb").removeClass(lastClass);
     $("#secondary-thumb").addClass(chosenColor);  
-  } else if (chosenTarget = "color3") {
+    $("#secondary-color").attr("src", "img/tie/secondary__" + chosenColor + ".png");
+  } else if (chosenTarget == "color3") {
     var lastClass = $('#tertiary-thumb').attr('class').split(' ').pop();
     $("#tertiary-thumb").removeClass(lastClass);
     $("#tertiary-thumb").addClass(chosenColor);  
+    $("#tertiary-color").attr("src", "img/tie/tertiary__" + chosenColor + ".png");
   }
 
   //make the background image update with the new values
-  var bgImage = " + tie.color1 + '_'  + tie.color2 + '_' + tie.color3 + '.png"
+  /*var bgImage = " + tie.color1 + '_'  + tie.color2 + '_' + tie.color3 + '.png"
   $("#color").css('background-image', 'url(img/bg/' + tie.color1 + '_' 
-              + tie.color2 + '_' + tie.color3 + '.png)');
+              + tie.color2 + '_' + tie.color3 + '.png)');*/
   
 
   //this variable in this context might be best if it came from a centralized object for the tie
