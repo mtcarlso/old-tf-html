@@ -17,36 +17,52 @@
     <li><a href="#">Contact Us</a></li>
     <li><a href="#">Cart</a></li>
   </ul>
-  <div class="container fill">
-  <div id="myCarousel" class="carousel slide">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="active item">
-        <div class="fill" style="background-image:url('//placehold.it/1024x700/449955/FFF');">
-          <div class="container">
-            
-          </div>
+      <div class="item active fill">
+        <img src="img/ThursdayFinestMock.jpg" alt="Tie 1">
+        <div class="carousel-caption">
+          <h3>Number One</h3>
+          <p>Your favorite</p>
+          <a class="btn btn-lg btn-primary" href="ties.html">MAKE</a>
         </div>
       </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('//placehold.it/1024x700');">
-          <div class="container">
-            
-          </div>
+      <div class="item fill">
+        <img src="img/ThursdayFinestMock.jpg" alt="Tie 2">
+        <div class="carousel-caption">
+          <h3>Number Dos</h3>
+          <p>One that you kind've like</p>
+          <a class="btn btn-lg btn-default" href="ties.html">MAKE</a>
         </div>
       </div>
-      <div class="item">
-        <div class="fill" style="background-image:url('//placehold.it/1024x700/CC1111/FFF');">
-          <div class="container">
-            
-          </div>
+      <div class="item fill">
+        <img src="img/ThursdayFinestMock.jpg" alt="Tie 3">
+        <div class="carousel-caption">
+          <h3>Number Three</h3>
+          <p>Your most hated</p>
+          <a class="btn btn-lg btn-info" href="ties.html">MAKE</a>
         </div>
       </div>
     </div>
-    <div class="pull-center">
-    <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-    <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
-    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
   </div>
+  <div class="clearfix">
+    FOOTER FOOTER
   </div>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>

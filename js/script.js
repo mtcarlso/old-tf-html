@@ -8,6 +8,9 @@ var tie = {
 		initials: "TF"
 };
 
+//carousel
+$('.carousel').carousel();
+
 //animate to sections of the site
 $('.scene_link').click(function(){
     $('html, body').animate({
@@ -40,6 +43,8 @@ $(".color-box").click( function() {
 
   //assign the value to the key for the tie
   tie[chosenTarget] = chosenColor;
+  $(".color-box").removeClass('active');    
+  $(this).addClass('active');
 
   //make the big thumbnail color change - makes first one change....
   if (chosenTarget == "color1") {
